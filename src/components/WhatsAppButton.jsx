@@ -7,7 +7,7 @@ export default function WhatsAppButton(){
 return(
 
 <a
-href="https://wa.me/your-number"
+href="https://wa.me/+919599661874"
 className="fixed bottom-6 right-6 bg-green-500 p-4 rounded-full text-white text-2xl shadow-lg"
 >
 
