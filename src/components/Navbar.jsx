@@ -15,7 +15,7 @@ DevNest Studio
 <div className="hidden md:flex gap-8 text-gray-300">
 
 <a href="#services">Services</a>
-<a href="#portfolio">Work</a>
+<a href="#portfolio">Portfolio</a>
 <a href="#contact">Contact</a>
 
 </div>

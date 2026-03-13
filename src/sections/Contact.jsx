@@ -2,15 +2,66 @@
 
 import { FaEnvelope, FaWhatsapp, FaLinkedin } from "react-icons/fa";
 import SpiderWebBackground from "../components/SpiderWebBackground";
+import emailjs from "@emailjs/browser";
+import { useRef } from "react";
+import toast from "react-hot-toast";
+import { useState } from "react";
+import { Toaster } from "react-hot-toast";
 
 export default function Contact() {
+
+  const [loading,setLoading] = useState(false);
+
+  const formRef = useRef();
+
+  const sendEmail = (e) => {
+
+  e.preventDefault();
+
+  setLoading(true);
+
+  emailjs
+    .sendForm(
+      "service_xxxxx",
+      "template_xxxxx",
+      formRef.current,
+      "public_key_xxxxx"
+    )
+    .then(() => {
+
+      toast.success("Message sent successfully!");
+
+      formRef.current.reset();
+
+    })
+    .catch(() => {
+
+      toast.error("Something went wrong.");
+
+    })
+    .finally(()=>{
+      setLoading(false);
+    });
+
+};
 
   return (
     <section className="py-32 px-6 bg-black relative overflow-hidden">
 
       <SpiderWebBackground/>
-      {/* gradient glow */}
 
+      <Toaster
+         position="top-center"
+         toastOptions={{
+         style:{
+               background:"#0f0f0f",
+               color:"#fff",
+               border:"1px solid #333"
+          }
+     }}
+      />
+
+      {/* gradient glow */}
       <div className="absolute w-[500px] h-[500px] bg-purple-600/20 blur-[200px] rounded-full top-20 right-0"></div>
 
       <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-16 items-start">
@@ -71,7 +122,7 @@ export default function Contact() {
 
         <div className="glass p-10 rounded-2xl">
 
-          <form className="space-y-6">
+          <form ref={formRef} onSubmit={sendEmail} className="space-y-6">
 
             <div>
               <label className="text-sm text-gray-400">
@@ -80,7 +131,9 @@ export default function Contact() {
 
               <input
                 type="text"
+                name="name"
                 placeholder="Your name"
+                required
                 className="w-full mt-2 p-4 rounded-lg bg-gray-900 border border-gray-700 focus:border-purple-500 outline-none"
               />
             </div>
@@ -92,7 +145,9 @@ export default function Contact() {
 
               <input
                 type="email"
+                name="email"
                 placeholder="Your email"
+                required
                 className="w-full mt-2 p-4 rounded-lg bg-gray-900 border border-gray-700 focus:border-purple-500 outline-none"
               />
             </div>
@@ -104,15 +159,19 @@ export default function Contact() {
 
               <textarea
                 rows="4"
+                name="message"
                 placeholder="Tell me about your project"
+                required
                 className="w-full mt-2 p-4 rounded-lg bg-gray-900 border border-gray-700 focus:border-purple-500 outline-none"
               ></textarea>
             </div>
 
             <button
-              className="w-full py-4 bg-purple-600 rounded-lg font-semibold hover:scale-[1.02] transition"
+             type="submit"
+             disabled={loading}
+             className="w-full py-4 bg-purple-600 rounded-lg font-semibold hover:scale-[1.02] transition disabled:opacity-50"
             >
-              Send Message
+            {loading ? "Sending..." : "Send Message"}
             </button>
 
           </form>
