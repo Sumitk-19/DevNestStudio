@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export default function StorySection() {
   return (
-    <section className="py-32 px-6 bg-black relative overflow-hidden">
+    <section id="story" className="py-32 px-6 bg-black relative overflow-hidden">
 
       {/* subtle gradient glow */}
       <div className="absolute w-[600px] h-[600px] bg-purple-600/20 blur-[200px] rounded-full -top-40 -left-40"></div>

@@ -1,12 +1,15 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { createAnimatable, utils, stagger } from "animejs";
+import { PopupModal } from "react-calendly";
 
 export default function CTA() {
 
   const containerRef = useRef(null);
   const animatableRef = useRef(null);
+
+  const [openCalendly, setOpenCalendly] = useState(false);
 
   useEffect(() => {
 
@@ -51,12 +54,19 @@ export default function CTA() {
 
   }, []);
 
-  const handleRevert = () => {
-    animatableRef.current?.revert();
+  const handleStartProject = () => {
+    document.getElementById("contact")?.scrollIntoView({
+      behavior: "smooth"
+    });
+  };
+
+  const handleScheduleCall = () => {
+    setOpenCalendly(true);
   };
 
   return (
     <section
+      id="cta"
       ref={containerRef}
       className="relative py-32 px-6 overflow-hidden bg-gradient-to-r from-purple-900 via-black to-blue-900"
     >
@@ -65,7 +75,7 @@ export default function CTA() {
 
       <div className="absolute w-[600px] h-[600px] bg-purple-600/30 blur-[200px] rounded-full top-0 left-1/2 -translate-x-1/2"></div>
 
-      {/* TOP LEFT */}
+      {/* animated circles */}
 
       <div className="absolute top-10 left-10 flex gap-4 opacity-40">
         {[...Array(3)].map((_, i) => (
@@ -73,23 +83,17 @@ export default function CTA() {
         ))}
       </div>
 
-      {/* TOP RIGHT */}
-
       <div className="absolute top-10 right-10 flex gap-4 opacity-40">
         {[...Array(3)].map((_, i) => (
           <div key={i} className="cta-circle w-8 h-8 bg-purple-400 rounded-full"></div>
         ))}
       </div>
 
-      {/* BOTTOM LEFT */}
-
       <div className="absolute bottom-10 left-10 flex gap-4 opacity-40">
         {[...Array(3)].map((_, i) => (
           <div key={i} className="cta-circle w-8 h-8 bg-purple-400 rounded-full"></div>
         ))}
       </div>
-
-      {/* BOTTOM RIGHT */}
 
       <div className="absolute bottom-10 right-10 flex gap-4 opacity-40">
         {[...Array(3)].map((_, i) => (
@@ -113,19 +117,31 @@ export default function CTA() {
         <div className="flex justify-center gap-6 flex-wrap">
 
           <button
-            onClick={handleRevert}
+            onClick={handleStartProject}
             className="px-8 py-4 bg-white text-black rounded-xl font-semibold hover:scale-105 transition"
           >
             Start Your Project
           </button>
 
-          <button className="px-8 py-4 border border-gray-500 rounded-xl hover:bg-white hover:text-black transition">
+          <button
+            onClick={handleScheduleCall}
+            className="px-8 py-4 border border-gray-500 rounded-xl hover:bg-white hover:text-black transition"
+          >
             Schedule a Call
           </button>
 
         </div>
 
       </div>
+
+      {/* Calendly Popup */}
+
+      <PopupModal
+         url="https://calendly.com/YOURUSERNAME"
+         onModalClose={() => setOpenCalendly(false)}
+         open={openCalendly}
+         rootElement={typeof window !== "undefined" ? document.body : null}
+      />
 
     </section>
   );

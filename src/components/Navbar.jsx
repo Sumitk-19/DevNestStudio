@@ -15,14 +15,17 @@ DevNest Studio
 <div className="hidden md:flex gap-8 text-gray-300">
 
 <a href="#services">Services</a>
-<a href="#portfolio">Portfolio</a>
+<a href="#work">Work</a>
 <a href="#contact">Contact</a>
 
 </div>
 
-<button className="bg-white text-black px-4 py-2 rounded-xl">
+<a
+href="#contact"
+className="px-6 py-2 rounded-lg bg-gradient-to-r from-purple-500 to-blue-500 text-white font-medium hover:scale-105 transition"
+>
 Start Project
-</button>
+</a>
 
 </div>
 

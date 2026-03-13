@@ -5,16 +5,15 @@ import GradientMesh from "../components/GradientMesh";
 import GridBackground from "../components/GridBackground";
 import CursorParticles from "../components/CursorParticles";
 
-
 export default function Hero(){
 
 return(
 
-<section className="relative min-h-screen flex flex-col justify-center items-center text-center px-6 overflow-hidden">
+<section id="home" className="relative min-h-screen flex flex-col justify-center items-center text-center px-6 overflow-hidden">
+
 <CursorParticles/>
 <GridBackground/>
 <GradientMesh/>
-
 
 <div className="absolute w-[600px] h-[600px] bg-purple-600 blur-[220px] opacity-20 rounded-full"></div>
 
@@ -39,11 +38,23 @@ Free Website Consultation Available
 
 <div className="flex gap-4 mt-8">
 
-<button className="px-6 py-3 bg-white text-black rounded-xl hover:scale-105 transition duration-300">
+<button
+onClick={()=>{
+const el = document.querySelector("#work");
+if(el) el.scrollIntoView({behavior:"smooth"});
+}}
+className="px-6 py-3 bg-white text-black rounded-xl hover:scale-105 transition"
+>
 View Work
 </button>
 
-<button className="px-6 py-3 border border-gray-500 rounded-xl hover:bg-white hover:text-black transition duration-300">
+<button
+onClick={()=>{
+const el = document.querySelector("#contact");
+if(el) el.scrollIntoView({behavior:"smooth"});
+}}
+className="px-6 py-3 border border-gray-500 rounded-xl hover:bg-white hover:text-black transition"
+>
 Start Project
 </button>
 

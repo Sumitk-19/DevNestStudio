@@ -40,7 +40,7 @@ export default function Stats() {
   }, []);
 
   return (
-    <section className="py-32 px-6 bg-black relative overflow-hidden">
+    <section id="stats" className="py-32 px-6 bg-black relative overflow-hidden">
 
       <CircleParticles />
 

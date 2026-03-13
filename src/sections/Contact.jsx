@@ -46,7 +46,7 @@ export default function Contact() {
 };
 
   return (
-    <section className="py-32 px-6 bg-black relative overflow-hidden">
+    <section id="contact" className="py-32 px-6 bg-black relative overflow-hidden">
 
       <SpiderWebBackground/>
 
