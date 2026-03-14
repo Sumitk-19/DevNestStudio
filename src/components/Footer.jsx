@@ -1,7 +1,8 @@
 "use client";
 
-import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
+import { FaLinkedin, FaWhatsapp, FaInstagram } from "react-icons/fa";
 import { RiTwitterXLine } from "react-icons/ri";
+
 
 export default function Footer() {
 
@@ -117,7 +118,7 @@ export default function Footer() {
                 target="_blank"
                 className="text-gray-400 hover:text-white transition hover:scale-110"
               >
-                <FaGithub />
+                <FaInstagram />
               </a>
 
               <a
