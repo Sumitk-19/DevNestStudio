@@ -39,7 +39,7 @@ export default function Services() {
       <div className="max-w-6xl mx-auto text-center">
 
         <h2 className="text-5xl font-bold mb-6">
-          Services I Offer
+          Services We Offer
         </h2>
 
         <p className="text-gray-400 max-w-xl mx-auto mb-16">
