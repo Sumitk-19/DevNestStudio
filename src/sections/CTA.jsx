@@ -137,7 +137,7 @@ export default function CTA() {
       {/* Calendly Popup */}
 
       <PopupModal
-         url="https://calendly.com/YOURUSERNAME"
+         url="https://calendly.com/devneststudio-team/30min"
          onModalClose={() => setOpenCalendly(false)}
          open={openCalendly}
          rootElement={typeof window !== "undefined" ? document.body : null}
