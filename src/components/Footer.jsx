@@ -137,7 +137,7 @@ export default function Footer() {
               </a>
 
               <a
-                href="https://wa.me/91XXXXXXXXXX"
+                href="https://wa.me/919599661874"
                 target="_blank"
                 className="text-gray-400 hover:text-white transition hover:scale-110"
               >
