@@ -10,23 +10,23 @@ const projects = [
       "A MERN stack eCommerce platform where users can browse and purchase books online.",
     image: "/mockup1.png",
     tech: ["React", "Node.js", "MongoDB"],
-    link: "#"
+    link: "https://book-store-six-ruby.vercel.app/"
   },
   {
-    title: "Video Conferencing App",
+    title: "Realtime Chat App",
     description:
-      "Real-time video conferencing application similar to Zoom built with WebRTC.",
+      "Real-time messaging application built with WebRTC.",
     image: "/mockup2.png",
     tech: ["WebRTC", "React", "Socket.io"],
-    link: "#"
+    link: "https://friend-fusion-3f85.onrender.com/"
   },
   {
-    title: "Expense Tracker",
+    title: "Image & Pdf Files Managerment App",
     description:
-      "Personal finance dashboard to track expenses and visualize spending patterns.",
-    image: "/mockup1.png",
+      "Compress and manage image and PDF files.",
+    image: "/mockup3.png",
     tech: ["React", "Node.js", "MongoDB"],
-    link: "#"
+    link: "https://tiny-files-pro.vercel.app/"
   }
 ];
 
