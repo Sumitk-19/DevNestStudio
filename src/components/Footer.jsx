@@ -114,23 +114,23 @@ export default function Footer() {
             <div className="flex gap-4 text-xl">
 
               <a
-                href="https://github.com/YOURUSERNAME"
+                href="https://www.instagram.com/devnest.studio/"
                 target="_blank"
                 className="text-gray-400 hover:text-white transition hover:scale-110"
               >
                 <FaInstagram />
               </a>
 
-              <a
+              {/* <a
                 href="https://linkedin.com/in/YOURUSERNAME"
                 target="_blank"
                 className="text-gray-400 hover:text-white transition hover:scale-110"
               >
                 <FaLinkedin />
-              </a>
+              </a> */}
 
               <a
-                href="https://twitter.com/YOURUSERNAME"
+                href="https://x.com/devneststudio_x"
                 target="_blank"
                 className="text-gray-400 hover:text-white transition hover:scale-110"
               >
