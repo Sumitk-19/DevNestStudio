@@ -11,11 +11,26 @@ return(
 
 <section id="home" className="relative min-h-screen flex flex-col justify-center items-center text-center px-6 overflow-hidden">
 
-<CursorParticles/>
-<GridBackground/>
-<GradientMesh/>
+{/* BACKGROUNDS */}
 
-<div className="absolute w-[600px] h-[600px] bg-purple-600 blur-[220px] opacity-20 rounded-full"></div>
+<div className="absolute inset-0 pointer-events-none">
+<CursorParticles/>
+</div>
+
+<div className="absolute inset-0 pointer-events-none">
+<GridBackground/>
+</div>
+
+<div className="absolute inset-0 pointer-events-none">
+<GradientMesh/>
+</div>
+
+<div className="absolute pointer-events-none w-[600px] h-[600px] bg-purple-600 blur-[220px] opacity-20 rounded-full"></div>
+
+
+{/* CONTENT */}
+
+<div className="relative z-10 flex flex-col items-center">
 
 <motion.h1
 initial={{opacity:0,y:60}}
@@ -38,25 +53,21 @@ Free Website Consultation Available
 
 <div className="flex gap-4 mt-8">
 
-<button
-onClick={()=>{
-const el = document.querySelector("#work");
-if(el) el.scrollIntoView({behavior:"smooth"});
-}}
-className="px-6 py-3 bg-white text-black rounded-xl hover:scale-105 transition"
+<a
+href="#work"
+className="px-6 py-3 bg-white text-black rounded-xl hover:scale-105 transition duration-300"
 >
 View Work
-</button>
+</a>
 
-<button
-onClick={()=>{
-const el = document.querySelector("#contact");
-if(el) el.scrollIntoView({behavior:"smooth"});
-}}
-className="px-6 py-3 border border-gray-500 rounded-xl hover:bg-white hover:text-black transition"
+<a
+href="#contact"
+className="px-6 py-3 border border-gray-500 rounded-xl hover:bg-white hover:text-black transition duration-300"
 >
 Start Project
-</button>
+</a>
+
+</div>
 
 </div>
 
