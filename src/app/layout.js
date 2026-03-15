@@ -1,5 +1,5 @@
 import "./globals.css";
-// import { Toaster } from "react-hot-toast";
+import { Analytics } from "@vercel/analytics/react";
 
 export const metadata = {
   title: "DevNest Studio | Web Development & Digital Products",
@@ -10,7 +10,7 @@ export default function RootLayout({children}) {
 return (
 <html lang="en">
 <body>{children}
-    
+    <Analytics />
 </body>
 </html>
 );
