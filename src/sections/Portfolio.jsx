@@ -21,6 +21,14 @@ const projects = [
     link: "https://friend-fusion-3f85.onrender.com/"
   },
   {
+    title: "Image & Pdf Files Managerment App",
+    description:
+      "Compress and manage image and PDF files.",
+    image: "/mockup3.png",
+    tech: ["React", "Node.js", "MongoDB"],
+    link: "https://tiny-files-pro.vercel.app/"
+  },
+  {
     title: "Gym Website",
     description:
       "A modern gym website with pricing and trainer information.",
@@ -29,13 +37,13 @@ const projects = [
     link: "https://iron-pulse-gym-mu.vercel.app/"
   },
   {
-    title: "Image & Pdf Files Managerment App",
+    title: "Vishwakarma Insurance",
     description:
-      "Compress and manage image and PDF files.",
-    image: "/mockup3.png",
-    tech: ["React", "Node.js", "MongoDB"],
-    link: "https://tiny-files-pro.vercel.app/"
-  }
+      "A modern Insurance provider's website.",
+    image: "/mockup5.png",
+    tech: ["React", "JavaScript (React JSX)", "React Icons"],
+    link: "https://vishwakarma-insurance.vercel.app/"
+  },
 ];
 
 export default function Portfolio() {
