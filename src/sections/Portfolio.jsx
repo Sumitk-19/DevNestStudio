@@ -17,8 +17,16 @@ const projects = [
     description:
       "Real-time messaging application built with WebRTC.",
     image: "/mockup2.png",
-    tech: ["WebRTC", "React", "Socket.io"],
+    tech: ["WebRTC", "React", "WebRTC", "Node.js", "JWT"],
     link: "https://friend-fusion-3f85.onrender.com/"
+  },
+  {
+    title: "Gym Website",
+    description:
+      "A modern gym website with pricing and trainer information.",
+    image: "/mockup4.png",
+    tech: ["Next.js", "Tailwind CSS", "JavaScript (React JSX)", "React Icons"],
+    link: "https://iron-pulse-gym-mu.vercel.app/"
   },
   {
     title: "Image & Pdf Files Managerment App",
