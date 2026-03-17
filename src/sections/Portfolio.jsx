@@ -48,7 +48,7 @@ const projects = [
 
 export default function Portfolio() {
   return (
-    <section id="work" className="py-32 px-6 bg-gradient-to-b from-black to-gray-900 relative overflow-hidden">
+    <section id="work" className="py-32 px-6 bg-gradient-to-b from-black to-gray-900 relative overflow-hidden min-h-screen">
 
       {/* subtle background glow */}
       <div className="absolute w-[500px] h-[500px] bg-purple-600/20 blur-[200px] rounded-full top-0 right-0"></div>

@@ -153,7 +153,7 @@ export default function Footer() {
 
         {/* bottom bar */}
 
-        <div className="border-t border-gray-800 pt-6 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
+        <div className="border-t border-gray-800 pt-6 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400 pb-24">
 
           <p>
             © {new Date().getFullYear()} DevNest Studio. All rights reserved.

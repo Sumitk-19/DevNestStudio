@@ -1,5 +1,7 @@
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next"
+import BottomNavbar from "@/components/BottomNavbar";
 
 export const metadata = {
   title: "DevNest Studio | Web Development & Digital Products",
@@ -11,6 +13,8 @@ return (
 <html lang="en">
 <body>{children}
     <Analytics />
+    <BottomNavbar />
+    <SpeedInsights />
 </body>
 </html>
 );
