@@ -44,6 +44,14 @@ const projects = [
     tech: ["React", "JavaScript (React JSX)", "React Icons"],
     link: "https://vishwakarma-insurance.vercel.app/"
   },
+  {
+    title: "Medi Care",
+    description:
+      "A modern healthcare provider's website.",
+    image: "/mockup6.png",
+    tech: ["Next.js", "Tailwind CSS", "JavaScript (React JSX)", "Daisy UI"],
+    link: "https://medi-care-eight-phi.vercel.app/"
+  },
 ];
 
 export default function Portfolio() {
