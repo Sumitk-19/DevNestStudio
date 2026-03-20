@@ -4,7 +4,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next"
 import BottomNavbar from "@/components/BottomNavbar";
 
 export const metadata = {
-  title: "DevNest Studio | Web Development & Digital Products",
+  title: "DevNest Studio",
   description: "DevNest Studio builds modern websites, web apps, and digital products that help businesses grow.",
 };
 
