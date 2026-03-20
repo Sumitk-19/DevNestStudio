@@ -52,6 +52,14 @@ const projects = [
     tech: ["Next.js", "Tailwind CSS", "JavaScript (React JSX)", "Daisy UI"],
     link: "https://medi-care-eight-phi.vercel.app/"
   },
+  {
+    title: "Optical Store",
+    description:
+      "A modern optical store website.",
+    image: "/mockup7.png",
+    tech: ["Next.js", "Tailwind CSS", "JavaScript (React JSX)", "Framer Motion"],
+    link: "https://optical-shop-beta.vercel.app/"
+  },
 ];
 
 export default function Portfolio() {
