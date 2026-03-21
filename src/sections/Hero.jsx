@@ -39,16 +39,20 @@ transition={{duration:1, ease:"easeOut"}}
 className="text-6xl font-bold max-w-4xl leading-tight"
 >
 
-Build <span className="gradient-text">Digital Products</span> That Grow Businesses
+We <span className="gradient-text">Build Websites</span> That Bring You Customers
 
 </motion.h1>
 
 <p className="text-gray-400 mt-6 max-w-xl">
-Web Development • Apps • Branding • Thumbnails
+Website for businesses
 </p>
 
 <p className="text-green-400 mt-4">
-Free Website Consultation Available
+We’ll personally review your business and suggest improvements (FREE)
+</p>
+
+<p className="text-green-400 mt-4">
+ Website starting at ₹4,999 | Delivery in 2–3 days
 </p>
 
 <div className="flex gap-4 mt-8">
@@ -64,7 +68,7 @@ View Work
 href="#contact"
 className="px-6 py-3 border border-gray-500 rounded-xl hover:bg-white hover:text-black transition duration-300"
 >
-Start Project
+Get Free Website Audit
 </a>
 
 </div>

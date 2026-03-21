@@ -28,7 +28,7 @@ const projects = [
     link: "https://tiny-files-pro.vercel.app/",
   },
   {
-    title: "Gym Website",
+    title: "For Gym Business",
     description:
       "A modern gym website with pricing and trainer information.",
     image: "/mockup4.png",
@@ -36,21 +36,21 @@ const projects = [
     link: "https://iron-pulse-gym-mu.vercel.app/",
   },
   {
-    title: "Vishwakarma Insurance",
+    title: "For Insurance Agency",
     description: "A modern Insurance provider's website.",
     image: "/mockup5.png",
     tech: ["React", "UI Design"],
     link: "https://vishwakarma-insurance.vercel.app/",
   },
   {
-    title: "Medi Care",
+    title: "For Healthcare Clinic",
     description: "A modern healthcare provider's website.",
     image: "/mockup6.png",
     tech: ["Next.js", "Tailwind"],
     link: "https://medi-care-eight-phi.vercel.app/",
   },
   {
-    title: "Optical Store",
+    title: "For Optical Store",
     description: "A modern optical store website.",
     image: "/mockup7.png",
     tech: ["Next.js", "Framer Motion"],
