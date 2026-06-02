@@ -4,10 +4,10 @@ import { useEffect, useRef } from "react";
 import CircleParticles from "../components/CircleParticles";
 
 const stats = [
-  { value: 20, suffix: "+", label: "Projects Delivered" },
-  { value: 2, suffix: "+", label: "Years Experience" },
-  { value: 100, suffix: "%", label: "Client Satisfaction" },
-  { value: 24, suffix: "h", label: "Avg Response Time" }
+  { value: 20, suffix: "+", label: "Websites Delivered" },
+  { value: 2, suffix: "+", label: "Years Building Digital Products" },
+  { value: 100, suffix: "%", label: "Project Completion Rate" },
+  { value: 24, suffix: "h", label: "Average Response Time" }
 ];
 
 export default function Stats() {
@@ -51,11 +51,11 @@ export default function Stats() {
       <div className="relative z-10 max-w-6xl mx-auto text-center">
 
         <h2 className="text-5xl font-bold mb-6">
-          Achievements & Experience
+          Trusted For Fast & Reliable Delivery
         </h2>
 
         <p className="text-gray-400 mb-20 max-w-xl mx-auto">
-          A few numbers that represent my journey in building digital products.
+          Focused on quality, speed, and client satisfaction.
         </p>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">

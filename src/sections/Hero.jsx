@@ -39,20 +39,20 @@ transition={{duration:1, ease:"easeOut"}}
 className="text-6xl font-bold max-w-4xl leading-tight"
 >
 
-We <span className="gradient-text">Build Websites</span> That Bring You Customers
+We <span className="gradient-text">Build Websites</span> That Turn Visitors Into Paying Customers
 
 </motion.h1>
 
 <p className="text-gray-400 mt-6 max-w-xl">
-Website for businesses
+Helping Businesses Build Their Online Presence
 </p>
 
 <p className="text-green-400 mt-4">
-We’ll personally review your business and suggest improvements (FREE)
+More Leads. More Calls. More Sales.
 </p>
 
 <p className="text-green-400 mt-4">
- Website starting at ₹4,999 | Delivery in 2–3 days
+Starting at ₹4,999 • Delivered in 2–3 Days
 </p>
 
 <div className="flex gap-4 mt-8">
@@ -61,14 +61,14 @@ We’ll personally review your business and suggest improvements (FREE)
 href="#work"
 className="px-6 py-3 bg-white text-black rounded-xl hover:scale-105 transition duration-300"
 >
-View Work
+Get Free Website Audit
 </a>
 
 <a
 href="#contact"
 className="px-6 py-3 border border-gray-500 rounded-xl hover:bg-white hover:text-black transition duration-300"
 >
-Get Free Website Audit
+View Work
 </a>
 
 </div>
