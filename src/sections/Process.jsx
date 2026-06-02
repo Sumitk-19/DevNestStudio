@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { FaSearch, FaPencilRuler, FaCode, FaRocket } from "react-icons/fa";
 
+
 const steps = [
   {
     icon: <FaSearch size={26} />,
@@ -33,6 +34,7 @@ const steps = [
 export default function Process() {
   return (
     <section id="process" className="py-28 px-6 bg-black">
+
 
       <div className="max-w-6xl mx-auto">
 
