@@ -39,20 +39,19 @@ transition={{duration:1, ease:"easeOut"}}
 className="text-6xl font-bold max-w-4xl leading-tight"
 >
 
-We <span className="gradient-text">Build Websites</span> That Turn Visitors Into Paying Customers
-
+Your<span className="gradient-text">Website Shouldn't</span> Just Look Good. It Should Generate Customers.
 </motion.h1>
 
 <p className="text-gray-400 mt-6 max-w-xl">
-Helping Businesses Build Their Online Presence
+We design high-converting websites, landing pages, and digital systems that help service businesses generate more enquiries, book more appointments, and grow revenue.
 </p>
 
-<p className="text-green-400 mt-4">
+{/* <p className="text-green-400 mt-4">
 More Leads. More Calls. More Sales.
-</p>
+</p> */}
 
 <p className="text-green-400 mt-4">
-Starting at ₹4,999 • Delivered in 2–3 Days
+🚀 Trusted by Growing Businesses Across India
 </p>
 
 <div className="flex gap-4 mt-8">
@@ -61,7 +60,7 @@ Starting at ₹4,999 • Delivered in 2–3 Days
 href="#work"
 className="px-6 py-3 bg-white text-black rounded-xl hover:scale-105 transition duration-300"
 >
-Get Free Website Audit
+Book Free Strategy Call
 </a>
 
 <a
