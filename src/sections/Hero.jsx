@@ -39,7 +39,7 @@ transition={{duration:1, ease:"easeOut"}}
 className="text-6xl font-bold max-w-4xl leading-tight"
 >
 
-Your <span className="gradient-text">Website Shouldn't</span> Just Look Good. It Should Generate Customers.
+Your Website Shouldn't Just Look Good. It Should <span className="gradient-text">Generate Customers</span>.
 </motion.h1>
 
 <p className="text-gray-400 mt-6 max-w-xl">
