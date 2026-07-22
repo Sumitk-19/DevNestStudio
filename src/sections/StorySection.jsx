@@ -23,16 +23,15 @@ export default function StorySection() {
           viewport={{ once: true }}
         >
           <h2 className="text-5xl font-bold leading-tight mb-6">
-            Websites That{" "}
+            Websites Built{" "}
             <span className="gradient-text">
-              Convert Visitors
+              To Grow
             </span>{" "}
-            Into Clients
+            Your Business
           </h2>
 
           <p className="text-gray-400 max-w-lg mb-8 text-lg">
-            We create modern, high-converting websites that help businesses
-            build trust, generate leads, and attract more customers online.
+            Every website we build is designed around one goal: helping your business generate more enquiries, build trust, and increase revenue.
           </p>
 
           <div className="flex flex-wrap gap-3">
@@ -72,7 +71,7 @@ export default function StorySection() {
               Fast Delivery
             </h3>
             <p className="text-sm text-gray-400">
-              Most websites delivered within 3–7 days.
+              Launch quickly without sacrificing quality.
             </p>
           </div>
 
@@ -82,7 +81,7 @@ export default function StorySection() {
               Mobile Optimized
             </h3>
             <p className="text-sm text-gray-400">
-              Perfect experience on phones, tablets, and desktops.
+              Designed for the devices where most of your customers browse.
             </p>
           </div>
 
